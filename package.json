@@ -1,0 +1,59 @@
+{
+  "name": "ibiz-screen-shot",
+  "version": "1.0.0",
+  "description": "web端自定义截屏插件(原生JS版)",
+  "main": "dist/screenShotPlugin.common.js",
+  "private": false,
+  "types": "dist/type/main.d.ts",
+  "publisher": "1147570162@qq.com",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name screenShotPlugin src/main.ts",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LUCIFER-ZHU/ibiz-screen-shot.git"
+  },
+  "keywords": [
+    "截图"
+  ],
+  "author": "luciferzhu",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-angular": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "commitizen": "^4.2.2",
+    "core-js": "^3.6.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "husky": "^4.3.0",
+    "prettier": "^1.19.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.7"
+  }
+}
