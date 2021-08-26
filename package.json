@@ -1,6 +1,6 @@
 {
   "name": "ibiz-web-screen-shot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "web端自定义截屏插件(原生JS版)",
   "main": "dist/screenShotPlugin.common.js",
   "private": false,
