@@ -124,7 +124,7 @@ export function drawCutOutBox(
 
     // 使用当前屏幕宽高
     imgWidth = window.screen.width;
-    imgHeight = window.screen.height;
+    imgHeight = window.screen.height * 0.895;
   }
 
   context.drawImage(imageController, 0, 0, imgWidth, imgHeight);
