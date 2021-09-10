@@ -191,7 +191,7 @@ export default class ScreenShort {
     this.data.showScreenShortPanel();
     if (!plugInParameters.getWebRtcStatus()) {
       // html2canvas截屏
-      html2canvas(document.body, {}).then(canvas => {
+      html2canvas(document.body, { allowTaint: true }).then(canvas => {
         // 装载截图的dom为null则退出
         if (this.screenShortController == null) return;
 
